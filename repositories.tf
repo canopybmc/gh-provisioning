@@ -10,6 +10,22 @@ module "canopybmc" {
   labels = merge(local.common_labels, local.canopybmc_labels, local.release_labels)
 }
 
+module "linux" {
+  source                 = "./modules/github-repository"
+  repository_name        = "linux"
+  repository_description = "Fork of the torvalds/linux tree. Mainly used to store our pending upstream serieses here."
+  default_branch         = "master" # from torvalds/linux.git
+
+  manage_rulesets             = false
+  enable_secret_scanning      = false
+  enable_vulnerability_alerts = false
+  enable_discussions          = false
+  enable_issues               = false
+  enable_projects             = false
+
+  labels = {}
+}
+
 module "website" {
   source                 = "./modules/github-repository"
   repository_name        = "website"
