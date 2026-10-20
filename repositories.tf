@@ -8,6 +8,8 @@ module "canopybmc" {
   enable_projects        = true
 
   labels = merge(local.common_labels, local.canopybmc_labels, local.release_labels)
+
+  required_status_checks = ["DCO"]
 }
 
 module "website" {
