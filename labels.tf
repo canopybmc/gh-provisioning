@@ -150,6 +150,10 @@ locals {
       color       = "fbca04"
       description = "Blocked on access to physical hardware to reproduce or verify"
     }
+    "logid-provided" = {
+      color       = "c2e0c6"
+      description = "A canopy-diag Log ID was provided"
+    }
 
     "topic/build" = {
       color       = "1d76db"
