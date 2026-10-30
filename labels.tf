@@ -2,7 +2,7 @@ locals {
   supported_releases = {
     "2026.06" = {
       lts       = false
-      backports = false
+      backports = true
     }
   }
 
