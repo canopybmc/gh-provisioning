@@ -4,6 +4,7 @@ module "canopybmc" {
   repository_description = "An upstream-first OpenBMC distribution focused on Stability, Long-Term Maintenance, Testing, and Developer Enablement."
   repository_homepage    = "https://canopybmc.org"
   repository_topics      = ["openbmc", "bmc", "firmware", "yocto", "openembedded"]
+  protected_branches     = ["~DEFAULT_BRANCH", "stable/**"]
   enable_discussions     = true
   enable_projects        = true
 
