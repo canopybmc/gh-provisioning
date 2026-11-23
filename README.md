@@ -106,3 +106,4 @@ pull request.
 - [Adding a new vendor or target](Documentation/new-target.md)
 - [Adding, changing or removing labels](Documentation/labels.md)
 - [Managing team settings](Documentation/teams.md)
+- [Settings not managed by Tofu](Documentation/manual-settings.md)
